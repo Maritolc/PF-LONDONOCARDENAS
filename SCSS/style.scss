@@ -2,6 +2,7 @@
 $poco-padding: 0px;
 $font-principal: "Montserrat", sans-serif;
 $bgc-header: #f8f7f6;
+$bgc-card:#fbf8e0;
 
 
 /*ANIDACION- NESTING*/
@@ -17,11 +18,17 @@ header {
         }
     } 
 }
+.logo-img {
+
+    width: 150px;
+    height: 150px;
+}
+
 
 /*MIXING*/  
 @mixin contacto{
-    background-color:#fff7d1;
-    border-radius: 5%;
+    background-color:whitesmoke;
+    
     opacity: .9;
 
 }
@@ -139,7 +146,7 @@ justify-content: center;
     height: 48px;
 }
 
-#numeros-datos div:not(:first-child){
+#numeros-datos div:not(:last-child){
     border-right: 2px solid #3f3f3f;
 }
 
@@ -151,7 +158,7 @@ justify-content: center;
     margin: 0;
 
 }
-
+/*MAP RESPONSIVE*/
 .map-responsive{
     overflow:hidden;
     padding-bottom:56.25%;
@@ -170,8 +177,33 @@ justify-content: center;
     height:100%;
     width:100%;
     position:absolute;
-
-
+}
+/*CARDS VIDEO*/
+iframe {
+opacity: 1;
+border-radius: 6px;
 }
 
+#card__video{
+    background-color: $bgc-card;
+}
+/*FLOATING*/
+    .floating { 
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+     
+    @keyframes floating {
+        0% { transform: translate(0,  0px); }
+        50%  { transform: translate(0, 15px); }
+        100%   { transform: translate(0, -0px); }   
+    }
+
+.typing {
+    position: absolute;
+}
 

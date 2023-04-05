@@ -16,14 +16,13 @@ header nav li a {
 
 /*MIXING*/
 .mixingcontainer {
-  background-color: #fff7d1;
-  border-radius: 5%;
+  background-color: whitesmoke;
   opacity: 0.9;
 }
 
 /*IMPORTE FUENTE*/
 /*CLASES GLOBALES*/
-body {
+*body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
@@ -56,6 +55,9 @@ footer p {
   .icon-wrap {
     flex-wrap: wrap;
     justify-content: center !important;
+  }
+  .logo-img{
+    margin-left: 100px !important;
   }
 }
 /*LG*/
@@ -108,7 +110,7 @@ footer p {
   height: 48px;
 }
 
-#numeros-datos div:not(:first-child) {
+#numeros-datos div:not(:last-child) {
   border-right: 2px solid #3f3f3f;
 }
 
@@ -120,6 +122,7 @@ footer p {
   margin: 0;
 }
 
+/*MAP RESPONSIVE*/
 .map-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
@@ -136,6 +139,54 @@ footer p {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+/*CARDS VIDEO*/
+iframe {
+  opacity: 1;
+  border-radius: 6px;
+}
+
+#card__video {
+  background-color: #fbf8e0;
+}
+
+/*FLOATING*/
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+
+.logo-img{
+  width: 150px;
+  height: 150px;
+}
+
+.typing{
+ display: flex;
+ flex-wrap: wrap;
+ position: relative;
+ width: 100%;
+ height: 100px;
+ justify-content: center;
+ background-color: whitesmoke;
+ 
 }
 
 /*# sourceMappingURL=styles.css.map */
